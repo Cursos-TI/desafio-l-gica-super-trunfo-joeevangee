@@ -4,6 +4,7 @@
 int main() {
     printf("Desafio super trunfo paises! \n");
     printf("novo commit\n");
+    printf("\n");
 
     //Declaracao de varial para carta 1!
     char Estado1[25], Codigo1[10], Cidade1[30];
@@ -27,6 +28,7 @@ int main() {
 
     
     //Cadastro da primeira carta!
+    printf("\n");
     printf("--- Cadastro da primeira Carta ---\n");
 
     printf("Digite o estado (A-H): \n");
@@ -51,6 +53,7 @@ int main() {
     scanf("%d", &Pontos_turisticos1);
 
     //Densidade populacional e PIB per capita carta 1
+    printf("\n");
     Densidade_populacional1 = (float)Populacao1 / Area1;
     printf("A densidade Populacional é: %.2f hab. km² \n", Densidade_populacional1);
 
@@ -65,6 +68,7 @@ int main() {
 
     
     //Cadastro da segunda carta!
+    printf("\n");
     printf(" --- Cadastro da segunda carta ---\n");
 
     printf("Digite o estado (A-H): \n");
@@ -89,6 +93,7 @@ int main() {
     scanf("%d", &Pontos_turisticos2);
 
     //Densidade populacional e PIB per capita carta 2
+    printf("\n");
     Densidade_populacional2 = Populacao2 / Area2;
     printf("A densidade Populacional é: %.2f hab/km² \n", Densidade_populacional2);
 
@@ -103,6 +108,7 @@ int main() {
     
     
     //Exibicoes das informacoes da Carta 1!
+    printf("\n");
      printf("--- CARTA 1 --- \n");
      printf("Estado: %s\n", Estado1);
      printf("Codigo: %s\n", Codigo1);
@@ -117,6 +123,7 @@ int main() {
      
      
      //Exibicoes das informacoes da Carta 2!
+     printf("\n");
      printf("--- CARTA 2 --- \n");
      printf("Estado: %s\n", Estado2);
      printf("Codigo: %s\n", Codigo2);
@@ -130,6 +137,7 @@ int main() {
      printf("Super Poder: %.4f \n", Super_poder2);
 
      //Exibição da carta Maior
+     printf("\n");
      printf("Carta maior 1 Carta menor 0 \n");
      printf(" --- Qual carta vai vencer? --- ");
      printf("A População da carta 1 é maior ?: %d\n", Populacao1 > Populacao2);
@@ -141,60 +149,79 @@ int main() {
      printf("O Super Poder da carta 1  é maior ?: %d\n", Super_poder1 > Super_poder2);
 
      //Comparação dos atributos das cartas 1 e 2!
+     printf("\n");
 
      printf(" ---- A Disputa Final! ---- \n");
      printf(" --- Quem sera o Vencedor ? --- \n");
      
      // População
+     
     printf("Comparacao de Populacao: ");
     if (Populacao1 > Populacao2){
         printf("A População da cidade 1 é maior \n");
+         vitorias_carta1++;
     } else {
         printf("A População da cidade 2 é maior \n");
+        vitorias_carta2++;
     }  
 
      // Área
+     
     printf("Comparacao de Area: ");
     if (Area1 > Area2){
         printf("A Area da cidade 1 é maior \n");
+        vitorias_carta1++;
     } else {
         printf("A Area da cidade 2 é maior \n");
+        vitorias_carta2++;
     }
 
      // PIB
+    
     printf("Comparacao de PIB: ");
     if (PIB1 > PIB2){
         printf("O PIB da cidade 1 é maior \n");
+        vitorias_carta1++;
     } else {
         printf("O PIB da cidade 2 é maior \n");
+        vitorias_carta2++;
     }
 
      // PIB per capita
+    
     printf("Comparacao de PIB per capita: ");
     if (PIB_per_capita1 > PIB_per_capita2){
         printf("O PIB per capita da cidade 1 é maior \n");
+        vitorias_carta1++;
     } else {
         printf("O PIB per capita da cidade 2 é maior \n");
+        vitorias_carta2++;
     }
 
      // Densidade populacional (menor é melhor)
+    
     printf("Comparacao de Densidade populacional (menor vence): ");
     if (Densidade_populacional1 < Densidade_populacional2){
         printf("A densidade Populacional da cidade 1 é menor \n");
+        vitorias_carta1++;
     } else {
         printf("A densidade Populacional da cidade 2 é menor \n");
+        vitorias_carta2++;
     }
 
-
     // Super Poder
+
     printf("Comparacao de Super Poder: ");
     if (Super_poder1 > Super_poder2){
         printf("O Super Poder da cidade 1 é maior \n");
+        vitorias_carta1++;
     } else {
         printf("O Super Poder da cidade 2 é maior \n");
+        vitorias_carta2++;
     }
 
     // Exibe o placar final e o vencedor
+    printf("\n");
     printf("\n--- Placar Final ---\n");
     printf("Vitorias da Carta 1: %d\n", vitorias_carta1);
     printf("Vitorias da Carta 2: %d\n", vitorias_carta2);
@@ -206,9 +233,6 @@ int main() {
     } else {
         printf("O JOGO TERMINOU EM EMPATE!\n");
     }
-
-
-
 
      
 
