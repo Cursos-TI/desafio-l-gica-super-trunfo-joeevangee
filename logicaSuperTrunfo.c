@@ -273,6 +273,7 @@ int main() {
     printf("Vitorias da Carta 1: %d\n", vitorias_carta1);
     printf("Vitorias da Carta 2: %d\n", vitorias_carta2);
      
+    
 
     return 0;
 }
